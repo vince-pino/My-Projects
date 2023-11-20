@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="styles/todo-list.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body>
+
+  <div class="container bg-light px-5">
+    <h1 class="text-primary text-center fw-bold text-decoration-underline mb-5 pt-5">My Todo's</h1>
+    <div class="container bg-white rounded-4 py-5 mb-5 text-center shadow">
+      <div class="row">
+        <div class="col-9">
+          <input class="js-todo-name-input form-control border-0" type="text" placeholder="Add new..." required>
+        </div>
+        <div class="col-2">
+          <input class="js-due-date-input due-date-input" type="date">
+        </div>
+        <div class="col-1">
+          <button class="btn btn-primary js-add-button">Add</button>
+        </div>
+      </div>
+    </div>
+    <div class="container border-top border-secondary-subtle">
+      <div class="row">
+        <div class="col">
+          <div class="rounded-5">
+            <div class="row mb-4">
+              <div class="link-container">
+                  <a class="navbar-brand link" href="todo-list.html">ALL</a>
+                </div>
+                <div class="link-container active">
+                  <a class="navbar-brand link" href="#">ACTIVE</a>
+                </div>
+                <div class="link-container">
+                  <a class="navbar-brand link" href="completed-todo-list.html">COMPLETED</a>
+                </div>
+              </div>
+          </div>
+              </div>
+            </div>
+            <table class="table table-borderless table-light">
+              <thead>
+                <tr class="w-100">
+                  <th class="w-75 pb-3">Name</th>
+                  <th class="w-50 pb-3">Date</th>
+                  <th class="pb-3">Action</th>
+                </tr>
+              </thead>
+              <tbody class="js-todo-list"></tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="fontawsome/kit.fontawesome.js"></script>
+  <script src="scripts/active-todo.js"></script>
+    
+</body>
+</html>
